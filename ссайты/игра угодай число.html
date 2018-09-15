@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+<script>
+
+
+	
+	var answer = parseInt(Math.random() * 100);
+	var a = 0
+	while (true) {
+	var userAnswer = prompt("Введите число от 0 до 100, \n для выхода напишите q");
+	a++
+	if (userAnswer=="q") {
+		alert("Пока")
+		break;
+	}
+	userAnswer = parseInt(userAnswer);	
+
+	if (userAnswer > answer){
+		alert("Ваше число слишком велико");
+	} else if (userAnswer < answer){
+		alert("Ваше число слишком мало");
+	} else if (answer == userAnswer){
+		alert("Вы угодали");
+		alert("количество попыток:"+a)
+		break;
+	} else {
+		alert("это не число");
+	}
+}
+</script>

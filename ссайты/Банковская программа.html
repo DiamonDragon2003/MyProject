@@ -1,0 +1,10 @@
+<script>
+	var number = +prompt("Введите сумму вклада.");
+	var percent = +prompt("Введите ежигодный процент.");
+	var years = +prompt("Введите количество лет.");
+
+	for(var i=1;i<=years;i++ ) {
+		number=number+number*percent/100;
+		alert("ваш вклад за "+i+" год составит: "+number);
+	}
+</script>
